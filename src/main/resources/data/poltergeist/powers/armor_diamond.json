@@ -1,0 +1,16 @@
+{
+	"type": "origins:conditioned_attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.armor",
+		"operation": "addition",
+		"value": 20
+	},
+	"tick_rate": 20,
+	"condition": {
+		"type": "origins:command",
+		"command": "execute if entity @e[distance=..2,tag=diamond]",
+		"comparison": ">=",
+		"compare_to": 1
+	},
+	"hidden": true
+}

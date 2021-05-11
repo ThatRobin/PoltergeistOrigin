@@ -1,0 +1,25 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_chosen": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:execute_command",
+			"command": "bossbar add 0 \"NotPossessing\""
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scoreboard objectives add 1 dummy \"Block Durability\""
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "bossbar set minecraft:0 players @s"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "bossbar set minecraft:0 max 72000"
+		}
+		]
+	},
+	"hidden": true
+}

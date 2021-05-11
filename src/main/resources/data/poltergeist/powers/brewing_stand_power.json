@@ -1,0 +1,125 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 0,
+	"key": {
+		"key": "key.origins.ternary_active"
+	},
+	"hud_render": {
+		"should_render": false
+	},
+	"entity_action": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:command",
+			"command": "execute at @s if entity @e[tag=stand,type=armor_stand,nbt={ArmorItems:[{},{},{},{id:\"minecraft:brewing_stand\"}]}]",
+			"comparison": ">=",
+			"compare_to": 1
+		},
+		"if_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:blaze_powder"
+					}
+				}
+			},
+			"if_action": {
+				"type": "origins:and",
+				"actions": [{
+					"type": "origins:execute_command",
+					"command": "clear @s blaze_powder 1"
+				},
+				{
+					 "type": "origins:execute_command",
+					"command": "effect give @s strength 360 0"
+				}]
+			},
+			"else_action": {
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:magma_cream"
+						}
+					}
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [{
+						"type": "origins:execute_command",
+						"command": "clear @s magma_cream 1"
+					},
+					{
+						 "type": "origins:execute_command",
+						"command": "effect give @s fire_resistance 360 0"
+					}]
+				},
+				"else_action": {
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:sugar"
+							}
+						}
+					},
+					"if_action": {
+						"type": "origins:and",
+						"actions": [{
+							"type": "origins:execute_command",
+							"command": "clear @s sugar 1"
+						},
+						{
+							 "type": "origins:execute_command",
+							"command": "effect give @s speed 360 0"
+						}]
+					},
+					"else_action": {
+						"type": "origins:if_else",
+						"condition": {
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:ghast_tear"
+								}
+							}
+						},
+						"if_action": {
+							"type": "origins:and",
+							"actions": [{
+								"type": "origins:execute_command",
+								"command": "clear @s ghast_tear 1"
+							},
+							{
+								 "type": "origins:execute_command",
+								"command": "effect give @s regeneration 360 0"
+							}]
+						},
+						"else_action": {
+							"type": "origins:execute_command",
+							"command": ""
+						}
+					}
+				}
+			}
+		},
+		"else_action": {
+			"type": "origins:execute_command",
+			"command": ""
+		}
+	},
+	"name": "Brewing without bottles",
+	"description": "When you possess a brewing stand, you can consume potion incredients to gain their powers."
+}

@@ -1,0 +1,12 @@
+{
+    "type": "origins:elytra_flight",
+    "render_elytra": true,
+	"condition": {
+		"type": "origins:resource",
+		"resource": "poltergeist:dragon_resource",
+		"comparison": ">=",
+		"compare_to": 1
+	},
+	"name": "Dragon Wings",
+	"description": "When possessing a dragon head, you gain the dragons flight."
+}

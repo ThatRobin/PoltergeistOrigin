@@ -1,0 +1,18 @@
+{
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+        "type": "origins:set_on_fire",
+		"duration": 5
+    },
+	"condition": {
+		"type": "origins:command",
+		"command": "execute at @s if entity @e[tag=stand,type=armor_stand,nbt={ArmorItems:[{},{},{},{id:\"minecraft:smoker\"}]}]",
+		"comparison": ">=",
+		"compare_to": 1
+	},
+    "cooldown": 0,
+    "hud_render": {
+        "should_render": false
+    },
+	"hidden": true
+}

@@ -1,0 +1,31 @@
+{
+	"type": "origins:active_self",
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+	"cooldown": 0,
+	"condition": {
+		"type": "origins:command",
+        "command": "execute at @s if entity @e[type=minecraft:armor_stand,tag=stand,tag=hand,distance=..5]",
+        "comparison": ">=",
+        "compare_to": 1
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [{
+			"type": "origins:change_resource",
+			"resource": "poltergeist:mining_resource",
+			"change": -10
+		},
+		{
+			"type": "origins:change_resource",
+			"resource": "poltergeist:mining_resource",
+			"change": 0
+		}
+		]
+	},
+	"hud_render": {
+		"should_render": false
+	},
+	"hidden": true
+}

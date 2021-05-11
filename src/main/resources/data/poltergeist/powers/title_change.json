@@ -1,0 +1,15 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 1,
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "bossbar set minecraft:0 name \"Not Possessing\""
+	},
+	"condition": {
+		"type": "origins:resource",
+		"resource": "poltergeist:block_resource",
+		"comparison": "==",
+		"compare_to": 0
+	},
+	"hidden": true
+}

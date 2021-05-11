@@ -1,0 +1,13 @@
+{
+    "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/red_sandstone_top",
+    "side": "minecraft:block/cut_red_sandstone"
+  },
+     "display": {
+  "head": {
+     "translation": [0, -31, 0],
+   "scale": [1.6, 1.6, 1.6]
+      }
+ }
+}

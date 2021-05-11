@@ -1,0 +1,11 @@
+{
+	"type": "origins:fire_immunity",
+	"condition": {
+		"type": "origins:command",
+		"command": "execute at @s if entity @e[tag=stand,type=armor_stand,nbt={ArmorItems:[{},{},{},{id:\"minecraft:netherite_block\"}]}]",
+		"comparison": ">=",
+		"compare_to": 1
+	},
+	"name": "Fireproof Netherite",
+	"description": "While possessing netherite, you are immune to fire."
+}

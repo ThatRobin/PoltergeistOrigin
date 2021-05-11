@@ -1,0 +1,31 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "name": "Extra damage when submerged",
+        "operation": "multiply_total",
+        "value": -100
+    },
+	"condition": {
+		"type": "origins:and",
+		"conditions": [{
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:or",
+				"conditions": [{
+					"type": "origins:ingredient",
+					"ingredient": {
+						"tag": "poltergeist:tools"
+					}
+				},
+				{
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:wooden_axe"
+					}
+				}]
+			}
+		}]
+    },
+	"hidden": true
+}

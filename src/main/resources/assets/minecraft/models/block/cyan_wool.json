@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube_all",
+        "textures": {
+          "all": "minecraft:block/cyan_wool"    
+},
+     "display": {
+  "head": {
+     "translation": [0, -31, 0],
+   "scale": [1.6, 1.6, 1.6]
+      }
+ }
+}

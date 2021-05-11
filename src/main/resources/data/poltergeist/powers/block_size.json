@@ -1,0 +1,73 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_chosen": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:height 0.5"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:motion 1"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:reach 1"
+		}
+		]
+	},
+	"entity_action_respawned": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:height 0.5"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:motion 1"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:reach 1"
+		}
+		]
+	},
+	"entity_action_lost": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:height 1"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:motion 1"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:reach 1"
+		}
+		]
+	},
+	"entity_action_removed": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:height 1"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:motion 1"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:reach 1"
+		}
+		]
+	},
+	"name": "Block Sized",
+	"description": "Youre the size of a minecraft block, being 1 block wide, by 1 block tall"
+}

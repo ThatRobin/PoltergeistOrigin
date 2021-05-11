@@ -1,0 +1,33 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:arrow",
+    "cooldown": 120,
+    "hud_render": {
+        "should_render": false
+    },
+    "tag": "{pickup:0b}",
+	"condition": {
+		"type": "origins:and",
+		"conditions": [{
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:arrow"
+				}
+			}
+		},
+		{
+			"type": "origins:command",
+			"command": "execute at @s if entity @e[tag=stand,type=armor_stand,nbt={ArmorItems:[{},{},{},{id:\"minecraft:dispenser\"}]}]",
+			"comparison": ">=",
+			"compare_to": 1
+		}]
+	},
+    "key": {
+        "key": "key.origins.ternary_active"
+    },
+	"name": "Dispenser Fire",
+	"description": "When possessing a dispenser, you can shoot arrows you're holding."
+}

@@ -1,0 +1,98 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 1,
+	"entity_action": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:command",
+			"command": "execute at @s if entity @e[tag=stand,type=armor_stand,nbt={ArmorItems:[{},{},{},{id:\"minecraft:beacon\"}]}]",
+			"comparison": ">=",
+			"compare_to": 1
+		},
+		"if_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:block_in_radius",
+				"block_condition": {
+					"type": "origins:in_tag",
+					"tag": "poltergeist:beacon_list"
+				},
+				"radius": 32,
+				"shape": "cube",
+				"comparison": ">=",
+				"compare_to": 27
+			},
+			"if_action": {
+				"type": "origins:and",
+				"actions": [{
+					"type": "origins:execute_command",
+					"command": "effect give @s jump_boost 2 0"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "effect give @s speed 2 0"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "effect give @s strength 2 0"
+				}]
+			},
+			"else_action": {
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:block_in_radius",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "poltergeist:beacon_list"
+					},
+					"radius": 32,
+					"shape": "cube",
+					"comparison": ">=",
+					"compare_to": 18
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [{
+						"type": "origins:execute_command",
+						"command": "effect give @s jump_boost 2 0"
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "effect give @s speed 2 0"
+					}]
+				},
+				"else_action": {
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:block_in_radius",
+						"block_condition": {
+							"type": "origins:in_tag",
+							"tag": "poltergeist:beacon_list"
+						},
+						"radius": 32,
+						"shape": "cube",
+						"comparison": ">=",
+						"compare_to": 9
+					},
+					"if_action": {
+						"type": "origins:and",
+						"actions": [{
+							"type": "origins:execute_command",
+							"command": "effect give @s jump_boost 2 0"
+						}]
+					},
+					"else_action": {
+						"type": "origins:execute_command",
+						"command": ""
+					}
+				}
+			}
+		},
+		"else_action": {
+			"type": "origins:execute_command",
+			"command": ""
+		}
+	},
+	"name": "Beacon buffs",
+	"description": "You gain more effects the more valuable blocks you have nearby."
+}

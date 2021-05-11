@@ -1,0 +1,13 @@
+{
+    "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/crimson_stem_top",
+    "side": "minecraft:block/crimson_stem"
+  },
+     "display": {
+  "head": {
+     "translation": [0, -31, 0],
+   "scale": [1.6, 1.6, 1.6]
+      }
+ }
+}

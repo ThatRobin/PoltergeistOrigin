@@ -1,0 +1,13 @@
+{
+    "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/jungle_log_top",
+    "side": "minecraft:block/jungle_log"
+  },
+     "display": {
+  "head": {
+     "translation": [0, -31, 0],
+   "scale": [1.6, 1.6, 1.6]
+      }
+ }
+}

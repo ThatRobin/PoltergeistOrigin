@@ -1,0 +1,15 @@
+{
+    "type": "origins:active_self",
+	"cooldown": 0,
+    "entity_action": {
+		"type": "origins:execute_command",
+		"command": "gamemode survival @s"
+	},
+	"hud_render": {
+        "should_render": false
+    },
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+	"hidden": true
+}

@@ -1,0 +1,27 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:command",
+			"command": "execute at @s if entity @e[tag=stand,type=armor_stand,nbt={ArmorItems:[{},{},{},{id:\"minecraft:dragon_head\"}]}]",
+			"comparison": ">=",
+			"compare_to": 1
+		},
+		"if_action": {
+			"type": "origins:change_resource",
+			"resource": "poltergeist:dragon_resource",
+			"change": 1
+		},
+		"else_action": {
+			"type": "origins:change_resource",
+			"resource": "poltergeist:dragon_resource",
+			"change": -1
+		}
+	},
+	"interval": 1,
+	"hud_render": {
+		"should_render": false
+	},
+	"hidden": true
+}

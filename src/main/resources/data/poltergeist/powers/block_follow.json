@@ -1,0 +1,15 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 1,
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "execute as @s run tp @e[type=area_effect_cloud,tag=stand,distance=..5] ~ ~-0.36 ~"
+	},
+	"condition": {
+		"type": "origins:resource",
+		"resource": "poltergeist:block_resource",
+		"comparison": "==",
+		"compare_to": 1
+	},
+	"hidden": true
+}

@@ -1,0 +1,14 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "minecraft:block/crimson_nylium",
+    "bottom": "minecraft:block/netherrack",
+    "side": "minecraft:block/crimson_nylium_side"
+  },
+     "display": {
+  "head": {
+     "translation": [0, -31, 0],
+   "scale": [1.6, 1.6, 1.6]
+      }
+ }
+}

@@ -1,0 +1,41 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 20,
+	"hud_render": {
+		"should_render": false
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [{
+			"type": "origins:execute_command",
+			"command": "xp add @s -1 levels"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "function poltergeist:repair_block"
+		}]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [{
+			"type": "origins:command",
+			"command": "xp query @s levels",
+			"comparison": ">=",
+			"compare_to": 1
+		},
+		{
+			"type": "origins:command",
+			"command": "execute if entity @e[distance=..4,tag=stand,type=armor_stand,nbt=!{ArmorItems:[{},{},{},{id:\"minecraft:enchanting_table\"}]}]",
+			"comparison": ">=",
+			"compare_to": 1
+		},
+		{
+			"type": "origins:resource",
+			"resource": "poltergeist:enchanting_resource",
+			"comparison": ">=",
+			"compare_to": 1
+		}
+		]
+	},
+	"hidden": true
+}

@@ -1,0 +1,28 @@
+{
+	"type": "origins:modify_break_speed",
+	"block_condition": {
+		"type": "origins:in_tag",
+		"tag": "poltergeist:diamond_list"
+	},
+	"condition": {
+        "type": "origins:and",
+        "conditions": [
+        {
+			"type": "origins:resource",
+			"resource": "poltergeist:mining_resource",
+			"comparison": "==",
+			"compare_to": 4
+        },
+		{
+			"type": "origins:using_effective_tool",
+			"inverted": true
+		}
+        ]
+    },
+	"modifier": {
+		"name": "Strong Arms stone break speed bonus",
+		"value": 0.06,
+		"operation": "addition"
+	},
+	"hidden": true
+}
