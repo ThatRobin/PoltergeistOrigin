@@ -1,0 +1,8 @@
+{
+    "type": "origins:model_color",
+    "alpha": 0.3,
+    "condition": {
+        "type": "poltergeist:is_possessing_block",
+        "inverted": true
+    }
+}

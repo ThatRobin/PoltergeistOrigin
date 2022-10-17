@@ -1,0 +1,8 @@
+v1	named	intermediary
+FIELD	io/github/thatrobin/poltergeist/mixin/InGameHudMixin	Lnet/minecraft/client/MinecraftClient;	client	field_2035
+FIELD	io/github/thatrobin/poltergeist/mixin/InGameHudMixin	I	scaledHeight	field_2029
+FIELD	io/github/thatrobin/poltergeist/mixin/InGameHudMixin	I	scaledWidth	field_2011
+FIELD	io/github/thatrobin/poltergeist/mixin/ServerPlayerInteractionManagerMixin	Lnet/minecraft/server/network/ServerPlayerEntity;	player	field_14008
+FIELD	io/github/thatrobin/poltergeist/mixin/ServerPlayerInteractionManagerMixin	Lnet/minecraft/server/world/ServerWorld;	world	field_14007
+METHOD	io/github/thatrobin/poltergeist/mixin/InGameHudMixin	()Lnet/minecraft/entity/player/PlayerEntity;	getCameraPlayer	method_1737
+METHOD	io/github/thatrobin/poltergeist/mixin/PlayerEntityRendererMixin	(Lnet/minecraft/client/network/AbstractClientPlayerEntity;)V	setModelPose	method_4218

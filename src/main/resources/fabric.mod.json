@@ -1,28 +1,40 @@
 {
-  "schemaVersion": 1,
-  "id": "poltergeist",
-  "version": "${version}",
-  "name": "Poltergeist Origin Addon",
-  "description": "Adds the poltergeist to the Origins Mod.",
-  "authors": [
-    "CyaConnor"
-  ],
-  "license": "GPL-3.0",
-  "icon": "assets/poltergeist/icon.png",
-  "environment": "*",
-  "entrypoints": {
-	"main": [
-      "poltergeist.common.Poltergeist"
-	]
-  },
-  "mixins": [
-    "poltergeist.mixins.json"
-  ],
-  "depends": {
-	"fabricloader": ">=0.11.0",
-	"fabric": "*",
-	"minecraft": "1.16.5",
-	"origins": ">=0.6.0",
-    "extrakeybinds": ">=0.1.0"
-  }
+    "schemaVersion": 1,
+    "id": "poltergeist",
+    "version": "${version}",
+    "name": "Poltergeist Origin Addon",
+    "description": "Adds the poltergeist to the Origins Mod.",
+    "authors": [
+        "ThatRobin"
+    ],
+    "license": "GPL-3.0",
+    "icon": "assets/poltergeist/icon.png",
+    "accessWidener" : "poltergeist.accesswidener",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            "io.github.thatrobin.poltergeist.client.PoltergeistClient"
+        ],
+	    "main": [
+            "io.github.thatrobin.poltergeist.Poltergeist"
+	    ],
+        "cardinal-components-entity": [
+            "io.github.thatrobin.poltergeist.Poltergeist"
+        ]
+    },
+    "mixins": [
+        "poltergeist.mixins.json"
+    ],
+    "custom": {
+        "cardinal-components": [
+            "poltergeist:durabilities"
+        ]
+    },
+    "depends": {
+        "java": ">=17",
+	    "fabricloader": ">=0.12.3",
+        "fabric": ">=0.55.0",
+        "minecraft": "1.19.x",
+	    "origins": ">=1.6.0"
+    }
 }

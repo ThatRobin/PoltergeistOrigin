@@ -1,0 +1,52 @@
+{
+  "mappings": {
+    "io/github/thatrobin/poltergeist/mixin/LivingEntityMixin": {
+      "damage": "Lnet/minecraft/class_1309;method_5643(Lnet/minecraft/class_1282;F)Z"
+    },
+    "io/github/thatrobin/poltergeist/mixin/CBPAccessorMixin": {
+      "state": "field_12326:Lnet/minecraft/class_2680;"
+    },
+    "io/github/thatrobin/poltergeist/mixin/PlayerEntityRendererMixin": {
+      "renderArm": "Lnet/minecraft/class_1007;method_23205(Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;ILnet/minecraft/class_742;Lnet/minecraft/class_630;Lnet/minecraft/class_630;)V",
+      "Lnet/minecraft/client/render/entity/LivingEntityRenderer;render(Lnet/minecraft/entity/LivingEntity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V": "Lnet/minecraft/class_922;method_4054(Lnet/minecraft/class_1309;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V",
+      "render": "Lnet/minecraft/class_1007;method_4215(Lnet/minecraft/class_742;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+    },
+    "io/github/thatrobin/poltergeist/mixin/AbstractBlockMixin": {
+      "calcBlockBreakingDelta": "Lnet/minecraft/class_4970;method_9594(Lnet/minecraft/class_2680;Lnet/minecraft/class_1657;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F"
+    },
+    "io/github/thatrobin/poltergeist/mixin/InGameHudMixin": {
+      "Lnet/minecraft/client/gui/hud/InGameHud;renderHealthBar(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/entity/player/PlayerEntity;IIIIFIIIZ)V": "Lnet/minecraft/class_329;method_37298(Lnet/minecraft/class_4587;Lnet/minecraft/class_1657;IIIIFIIIZ)V",
+      "renderStatusBars": "Lnet/minecraft/class_329;method_1760(Lnet/minecraft/class_4587;)V"
+    },
+    "io/github/thatrobin/poltergeist/mixin/ServerPlayerInteractionManagerMixin": {
+      "tryBreakBlock": "Lnet/minecraft/class_3225;method_14266(Lnet/minecraft/class_2338;)Z",
+      "Lnet/minecraft/item/ItemStack;postMine(Lnet/minecraft/world/World;Lnet/minecraft/block/BlockState;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;)V": "Lnet/minecraft/class_1799;method_7952(Lnet/minecraft/class_1937;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "io/github/thatrobin/poltergeist/mixin/LivingEntityMixin": {
+        "damage": "Lnet/minecraft/class_1309;method_5643(Lnet/minecraft/class_1282;F)Z"
+      },
+      "io/github/thatrobin/poltergeist/mixin/CBPAccessorMixin": {
+        "state": "field_12326:Lnet/minecraft/class_2680;"
+      },
+      "io/github/thatrobin/poltergeist/mixin/PlayerEntityRendererMixin": {
+        "renderArm": "Lnet/minecraft/class_1007;method_23205(Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;ILnet/minecraft/class_742;Lnet/minecraft/class_630;Lnet/minecraft/class_630;)V",
+        "Lnet/minecraft/client/render/entity/LivingEntityRenderer;render(Lnet/minecraft/entity/LivingEntity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V": "Lnet/minecraft/class_922;method_4054(Lnet/minecraft/class_1309;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V",
+        "render": "Lnet/minecraft/class_1007;method_4215(Lnet/minecraft/class_742;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+      },
+      "io/github/thatrobin/poltergeist/mixin/AbstractBlockMixin": {
+        "calcBlockBreakingDelta": "Lnet/minecraft/class_4970;method_9594(Lnet/minecraft/class_2680;Lnet/minecraft/class_1657;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F"
+      },
+      "io/github/thatrobin/poltergeist/mixin/InGameHudMixin": {
+        "Lnet/minecraft/client/gui/hud/InGameHud;renderHealthBar(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/entity/player/PlayerEntity;IIIIFIIIZ)V": "Lnet/minecraft/class_329;method_37298(Lnet/minecraft/class_4587;Lnet/minecraft/class_1657;IIIIFIIIZ)V",
+        "renderStatusBars": "Lnet/minecraft/class_329;method_1760(Lnet/minecraft/class_4587;)V"
+      },
+      "io/github/thatrobin/poltergeist/mixin/ServerPlayerInteractionManagerMixin": {
+        "tryBreakBlock": "Lnet/minecraft/class_3225;method_14266(Lnet/minecraft/class_2338;)Z",
+        "Lnet/minecraft/item/ItemStack;postMine(Lnet/minecraft/world/World;Lnet/minecraft/block/BlockState;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;)V": "Lnet/minecraft/class_1799;method_7952(Lnet/minecraft/class_1937;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;)V"
+      }
+    }
+  }
+}

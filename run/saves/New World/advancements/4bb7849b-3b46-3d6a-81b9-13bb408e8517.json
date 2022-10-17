@@ -1,0 +1,15 @@
+{
+  "minecraft:recipes/decorations/light_gray_glazed_terracotta": {
+    "criteria": {
+      "has_light_gray_terracotta": "2022-07-10 23:11:36 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:badlands": "2022-07-10 23:11:27 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 3105
+}

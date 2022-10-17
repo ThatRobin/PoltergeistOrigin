@@ -1,0 +1,13 @@
+{
+	"type": "origins:replace_loot_table",
+	"replace": {
+		"([a-z|0-9|\\-|_])*:blocks\/([a-z|0-9|\\-|_])*": "poltergeist:blast_furnace_smelt"
+	},
+	"condition": {
+		"type": "poltergeist:is_possessing_block",
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:blast_furnace"
+		}
+	}
+}
